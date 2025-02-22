@@ -2,7 +2,7 @@ python-dotenv
 SQLAlchemy
 psycopg2
 Telethon
-git+https://github.com/MOON-CODES/moonp.git@pyrotgfork
+git+https://github.com/MOON-CODES/pyropatch.git@pyrotgfork
 pyrotgfork
 TgCrypto
 uvloop
