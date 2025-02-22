@@ -10,7 +10,7 @@ from moonXcodes import APP_ID, API_HASH, BOT_TOKEN, LOGGER  # noqa: E402
 
 
 async def main():
-    plugins = dict(root="moonXstring-/plugins")
+    plugins = dict(root="moonXcodes/plugins")
     app = Client(
         name="moon",
         api_id=APP_ID,
