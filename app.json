@@ -11,16 +11,16 @@
         "pyrogram",
         "telethon"
     ],
-    "repository": "https://github.com/AnonymousX1025/StringGenBot",
+    "repository": "https://github.com/MOON-CODES/moonXstring-",
     "env": {
       "API_ID": {
         "description": "Get this value from https://my.telegram.org",
-        "value": "",
+        "value": "27655052",
         "required": true
       },
       "API_HASH": {
         "description": "Get this value from https://my.telegram.org",
-        "value": "",
+        "value": "69f7666ce277f90916d85d1373e8b318",
         "required": true
       },
       "BOT_TOKEN": {
