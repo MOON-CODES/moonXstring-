@@ -6,7 +6,7 @@ import asyncio  # noqa: E402
 from pyropatch import pyropatch  # noqa: E402, F401
 from pyrogram import Client, idle, __version__  # noqa: E402
 from pyrogram.raw.all import layer  # noqa: E402
-from ssnbot import APP_ID, API_HASH, BOT_TOKEN, LOGGER  # noqa: E402
+from moonXcodes import APP_ID, API_HASH, BOT_TOKEN, LOGGER  # noqa: E402
 
 
 async def main():
