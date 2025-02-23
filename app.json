@@ -1,0 +1,61 @@
+{
+  "name": "AbhiModszYT",
+  "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
+  "logo": "https://graph.org/file/71c3e8432ffe0276bedb9.jpg",
+  "keywords": [
+  "python3",
+  "telegram",
+  "MusicBot",
+  "telegram-bot",
+  "pyrogram"
+  ],
+  "env": {
+    "APP_ID": {
+      "description": "api id",
+      "value": "",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "aip hash.",
+      "value": "",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "bot token",
+      "value": "",
+      "required": true
+    },
+    "DB_URL": {
+      "description": "database url",
+      "value": "",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "owner id 7045191057",
+      "value": "7045191057",
+      "required": true
+    },
+    "MUST_JOIN": {
+      "description": "channel for sub",
+      "value": "",
+      "required": true
+    },
+    "ADMINS": {
+      "description": "use like 7045191057 7045191057",
+      "value": "7045191057 7045191057",
+      "required": true
+    }
+  },
+  "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "heroku/nodejs"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        }
+    ],
+    "stack": "container"
+}
