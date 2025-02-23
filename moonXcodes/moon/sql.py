@@ -5,7 +5,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, scoped_session
 from sqlalchemy.orm.exc import NoResultFound
 from sqlalchemy.pool import StaticPool
-from moonXcodes import moon_URL
+from moonXcodes import DB_URL as moon_URL
 
 
 BASE = declarative_base()
